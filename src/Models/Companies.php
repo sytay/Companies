@@ -55,7 +55,7 @@ class Companies extends Model {
             $company->company_location = $input['company_location'];
             $company->company_description = $input['company_description'];
             //if($input['location_status'] != NULL){
-            $company->company_status = $input['company_status'];
+            $company->company_status = 1;
             //}
             $company->save();
 
