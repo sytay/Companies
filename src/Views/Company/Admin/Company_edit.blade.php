@@ -49,7 +49,7 @@ Admin area: {{ trans('company::company_admin.page_edit') }}
                                     </a>
                                 </li>
                             </ul>
-
+//
                             <div class="tab-content">
 
                                 <!--TEMPLATE OVERVIEW-->
