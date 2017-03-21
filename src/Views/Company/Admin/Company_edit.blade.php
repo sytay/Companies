@@ -55,10 +55,18 @@ Admin area: {{ trans('company::company_admin.page_edit') }}
                                 <!--TEMPLATE OVERVIEW-->
                                 <div id="home" class="tab-pane fade in active">
                                     <!-- SAMPLE NAME TEXT-->
+                                    <!-- COMPANY NAME TEXT-->
                                     @include('company::company.elements.text', ['name' => 'company_name'])
+                                    <!-- /END COMPANY NAME TEXT -->
+                                    <!-- COMPANY ADDRESS TEXT-->
                                     @include('company::company.elements.text', ['name' => 'company_address'])
+                                    <!-- /END COMPANY ADDRESS TEXT -->
+                                    <!-- COMPANY LOCATION SELECT-->
                                     @include('company::company.elements.select', ['name' => 'company_location'])
+                                    <!-- /END COMPANY LOCATION SELECT -->
+                                    <!-- COMPANY DESCRIPTION TEXT-->
                                     @include('company::company.elements.text', ['name' => 'company_description'])
+                                    <!-- /END COMPANY DESCRIPTION TEXT -->
                                     <!-- /END SAMPLE NAME TEXT -->
                                 </div>
 

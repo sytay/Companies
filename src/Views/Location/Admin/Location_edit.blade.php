@@ -55,15 +55,18 @@ Admin area: {{ trans('company::location_admin.page_edit') }}
                                 <!--TEMPLATE OVERVIEW-->
                                 <div id="home" class="tab-pane fade in active">
                                     <!-- SAMPLE NAME TEXT-->
+                                    <!-- LOCATION NAME TEXT-->
                                     @include('company::location.elements.text', ['name' => 'location_name'])
-                                    
+                                    <!-- /END LOCATION NAME TEXT -->
                                     <!-- /END SAMPLE NAME TEXT -->
                                 </div>
 
                                 <!--TEMPLATE ATTRIBUTES-->
                                 <div id="menu1" class="tab-pane fade">
                                     <!-- SAMPLE CATEGORIES TEXT-->
+									<!-- ATTRIBUTES TEXT-->
                                     @include('company::location.elements.text', ['name' => 'attributes'])
+									<!-- /END ATTRIBUTES TEXT-->
                                     <!-- /END SAMPLE CATEGORIES TEXT-->
                                 </div>
 
