@@ -49,7 +49,6 @@ Admin area: {{ trans('company::company_admin.page_edit') }}
                                     </a>
                                 </li>
                             </ul>
-//
                             <div class="tab-content">
 
                                 <!--TEMPLATE OVERVIEW-->
@@ -65,7 +64,8 @@ Admin area: {{ trans('company::company_admin.page_edit') }}
                                     @include('company::company.elements.select', ['name' => 'company_location'])
                                     <!-- /END COMPANY LOCATION SELECT -->
                                     <!-- COMPANY DESCRIPTION TEXT-->
-                                    @include('company::company.elements.text', ['name' => 'company_description'])
+                                 
+                                    @include('company::company.elements.text-area', ['name' => 'company_description'])
                                     <!-- /END COMPANY DESCRIPTION TEXT -->
                                     <!-- /END SAMPLE NAME TEXT -->
                                 </div>

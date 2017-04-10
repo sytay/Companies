@@ -31,6 +31,7 @@ return [
     'location_name_label' => 'Location name:',
     'location_name_placeholder' => 'Location name',
     'location_category_name'=> 'Location category name',
+    'location_alias'=>'location alias',
 
     /**
      * Message

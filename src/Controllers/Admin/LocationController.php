@@ -62,7 +62,8 @@ class LocationController extends AdminController {
             'location' => $location,
             'request' => $request
         ));
-        return view('company::location.admin.location_edit', $this->data_view);
+        return view('company::location.admin.location_edit', $this->data_view)
+                ->with('location_parent', $this->obj_location->get_locations_array());;
     }
 
     /**

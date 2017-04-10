@@ -59,6 +59,8 @@ Admin area: {{ trans('company::location_admin.page_edit') }}
                                     @include('company::location.elements.text', ['name' => 'location_name'])
                                     <!-- /END LOCATION NAME TEXT -->
                                     <!-- /END SAMPLE NAME TEXT -->
+                                    
+                                    @include('company::location.elements.select', ['name' => 'location_alias'])
                                 </div>
 
                                 <!--TEMPLATE ATTRIBUTES-->

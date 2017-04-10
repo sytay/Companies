@@ -23,23 +23,23 @@ class Locations extends Model {
 
         //location_name
         if (!empty($params['location_name'])) {
-            $eloquent->where('location_name', 'like', '%'. $params['location_name'].'%');
+            $eloquent->where('location_name', 'like', '%' . $params['location_name'] . '%');
         }
 
-        $locations = $eloquent->paginate(10);//TODO: change number of item per page to configs
+        $locations = $eloquent->paginate(10); //TODO: change number of item per page to configs
 
         return $locations;
     }
-    
-    public function get_locations_array(){
+
+    public function get_locations_array() {
         $locations = $this->get();
         $list = NULL;
-        foreach ($locations as $location){
+        $list[0]="Unalias";
+        foreach ($locations as $location) {
             $list[$location->location_id] = $location->location_name;
         }
         return $list;
     }
-
 
     /**
      *
@@ -60,7 +60,7 @@ class Locations extends Model {
             $location->location_name = $input['location_name'];
             $location->location_alias = "0";
             //if($input['location_status'] != NULL){
-                $location->location_status = "1";
+            $location->location_status = "1";
             //}
             $location->save();
 
@@ -79,9 +79,10 @@ class Locations extends Model {
 
         $location = self::create([
                     'location_name' => $input['location_name'],
-                   
+                    'location_alias' => $input['location_alias'],
         ]);
-        
+
         return $location;
     }
+
 }
