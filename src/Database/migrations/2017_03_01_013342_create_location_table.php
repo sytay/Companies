@@ -55,7 +55,7 @@ class CreateLocationTable extends Migration {
         //status_id
         if (!Schema::hasColumn($this->_table, 'location_id_alias')) {
             Schema::table($this->_table, function (Blueprint $table) {
-                $table->integer('location_id_alias')->default(0);
+                $table->integer('location_alias')->default(0);
             });
         }
         
